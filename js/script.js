@@ -103,18 +103,18 @@ contactForm.addEventListener("submit",function(e){
 
 e.preventDefault();
 
-const name=document.getElementById("contactName").value.trim();
-const email=document.getElementById("contactEmail").value.trim();
-const phone=document.getElementById("contactPhone").value.trim();
-const message=document.getElementById("contactMessage").value.trim();
+const name=document.getElementById("name").value.trim();
+const email=document.getElementById("email").value.trim();
+const phone=document.getElementById("phone").value.trim();
+const message=document.getElementById("message").value.trim();
 
-const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const phonePattern=/^[6-9]\d{9}$/;
 
 if(name===""){
 
-alert("Enter your name");
+alert("Please enter your name");
 
 return;
 
